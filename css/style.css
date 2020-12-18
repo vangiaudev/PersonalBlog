@@ -6,9 +6,6 @@ body{
     overflow-y: scroll;
 }
 
-.body1{
-}
-
 .hieu_ung_chu {
     display: flex;
     flex-direction: column;
@@ -67,26 +64,29 @@ h2{
 .header{
     background-color:rgb(149, 215, 231);
     background-image: linear-gradient(rgb(149, 215, 231), cyan);
-    width: 1365px;
+    width: 100%;
     height: 96px;
     position: fixed;
     margin-top: -300px;
     z-index: 200;
 }
+
 .menuHeader{
     display: flex;
     list-style: none;
     justify-content: space-around;
-    margin: -90px 300px 0 290px; /*trên, phải, dưới, trái*/
+    margin: -90px 300px 0 290px; /*trên, phải, dưới, trái */
     font-size: 20px;
     font-weight: bold;
     color: darkmagenta;
 
 }
+
 #gifHeader{
     margin-left: 1250px;
     margin-top: -50px;
 }
+
 .header ul li:hover{
     text-decoration:none;
     color:  chocolate;
@@ -104,67 +104,58 @@ h2{
     margin-top: -30px;
     margin-left: -100px;
 }
-.layerduoi{
-    z-index: 1;
-    
-}
-
-.hieu_ung_chu{
-    z-index: 5;
-}
 
 .layer1{
     width: 100%;
     height: 800px;
     background-color: rgb(198, 244, 255);
-    margin-top:550px;
-    position: absolute;
+    margin-top:300px;
     z-index: 1;
-
+    display: flex;
+    justify-content: space-around;
 }
 
 .layer2a{
-    width: 800px;
+    width: 30%;
     height: 700px;
-    margin-top: 50px;
-    margin-left: 500px;
-    margin-right: -50px;
-    background-color: whitesmoke;
-    box-shadow: 1px -2px 3px rgb(51, 3, 3);
-}
-
-.layer2b{
-    width: 400px;
-    height: 700px;
-    margin-top: -580px;
-    margin-left: -450px;
+    margin: auto auto;
     box-shadow: -1px -2px 3px rgb(51, 3, 3); 
     background-color: whitesmoke;
 }
+
+.layer2b{
+    width: 60%;
+    height: 700px;
+    margin: auto auto;
+    box-shadow: 1px -2px 3px rgb(51, 3, 3);
+    background-color: whitesmoke;
+    position: relative;
+}
+
 
 .avatar{
     padding-top: 30px;
 }
 
 .information{
-    margin-left: 20px;
+    margin: auto auto auto 20px;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .infor{
-    width: 360px;
+    width: 95%;
     height: 20px;
     background-color: rgb(53, 99, 252);
-    margin-bottom: 20px;
-    margin-top: -15px;
+    margin: -15px auto 20px 0px;
+
 }
 
 .education{
-    width: 360px;
+    width: 95%;
     height: 20px;
     background-color:rgb(53, 99, 252);
-    margin-bottom: 20px;
+    margin: auto auto 20px 0px;
 }
 
 .aboutme{
@@ -175,51 +166,52 @@ h2{
 }
 
 .gachchan{
-    width: 140px;
+    width: 15%;
     height: 3px;
     margin-left: 20px;
     background-color: blue;
 }
 
-.linelevel{
-    width: 340px;
-    height: 15px;
-    margin-left: 20px;
-    background-color: red;
-}
-
 .shortcomings{
-    width: 190px;
+    width: 30%;
     height: 15px;
-    margin-left: 340px;
+    margin: auto auto;
     background-color: rgb(0, 2, 15);
+}
+.drawskill{
+    width: 70%;
+    height: auto;
+    margin: auto auto auto 20px;
+    background-color: red;
+    display: flex;
 }
 
 .linelevel2{
-    width: 240px;
-    height: 15px;
-    margin-left: 20px;
+    width: 40%;
+    height: auto;
+    margin: auto auto auto 20px;
     background-color: red;
+    
 }
 
 .shortcomings2{
-    width: 290px;
+    width: 60%;
     height: 15px;
-    margin-left: 240px;
+    margin: auto auto;
     background-color: rgb(0, 2, 15);
 }
 
 .linelevel3{
-    width: 180px;
-    height: 15px;
-    margin-left: 20px;
+    width: 30%;
+    height: auto;
+    margin: auto auto auto 20px;
     background-color: red;
 }
 
 .shortcomings3{
-    width: 350px;
+    width: 70%;
     height: 15px;
-    margin-left: 180px;
+    margin: auto auto;
     background-color: rgb(0, 2, 15);
 }
 
@@ -236,17 +228,13 @@ h2{
     margin-top: -1202px;
     background-color: #0078ff;
     opacity: 0.6;
-}
-
-.backgroundfoot{
-    margin-top: 100%;
+    z-index: 1000;
 }
 
 .contact{
-    width: 1000px;
+    width: 80%;
     height: 350px;
-    margin-top: -440px;
-    left: 160px;
+    margin: -440px auto auto auto;
     background-color:rgb(226, 226, 226);
     position: relative;
     box-shadow: 0px 3px 3px rgb(51, 3, 3);
@@ -304,8 +292,7 @@ h2{
     background-color: rgb(255, 255, 255);
     border: solid blue;
     border-radius: 100px;
-    margin-left: 150px;
-    margin-top: -55px;
+    margin-left: 30px;
 }
 
 .twitter{
@@ -314,8 +301,7 @@ h2{
     background-color: rgb(255, 255, 255);
     border: solid blue;
     border-radius: 100px;
-    margin-left: 240px;
-    margin-top: -55px;
+    margin-left: 30px;
 }
 
 .youtube{
@@ -324,8 +310,7 @@ h2{
     background-color: rgb(255, 255, 255);
     border: solid blue;
     border-radius: 100px;
-    margin-left: 330px;
-    margin-top: -55px;
+    margin-left: 30px;
 }
 
 .pinterest{
@@ -334,12 +319,35 @@ h2{
     background-color: rgb(255, 255, 255);
     border: solid blue;
     border-radius: 100px;
-    margin-left: 420px;
-    margin-top: -55px;
+    margin-left: 30px
 }
 
 .final{
     background-color: rgb(4, 3, 58);
     height: 40px;
     margin-top: -20px;
+}
+
+.btnLink{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkmagenta;
+    padding-left: 10%;
+}
+
+@media only screen and (max-width: 1030px){
+    .layer1{
+        display: block;
+    }
+    .layer2a{
+        width: 100%;
+    }
+    .layer2b{
+        width: 100%;
+    }
+    .contact{
+        height: 700px;
+    }
 }
