@@ -57,10 +57,12 @@ h2{
         font-size: 1.5rem;
     }
 }
+
 .danh_chu{
     font-size: 60px;
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .header{
     background-color:rgb(149, 215, 231);
     background-image: linear-gradient(rgb(149, 215, 231), cyan);
@@ -68,17 +70,19 @@ h2{
     height: 96px;
     position: fixed;
     margin-top: -300px;
+    /* margin-top: -10px; */
     z-index: 200;
 }
 
 .menuHeader{
     display: flex;
-    list-style: none;
+    list-style-type: none;
     justify-content: space-around;
-    margin: -90px 300px 0 290px; /*trên, phải, dưới, trái */
+    margin: -90px 300px 0 290px;
     font-size: 20px;
     font-weight: bold;
-    color: darkmagenta;
+    color: rgb(48, 1, 109);
+    position: relative;
 
 }
 
@@ -210,7 +214,7 @@ h2{
 
 .shortcomings3{
     width: 70%;
-    height: 15px;
+    height: auto;
     margin: auto auto;
     background-color: rgb(0, 2, 15);
 }
@@ -224,7 +228,8 @@ h2{
 
 .footer{
     width: 100%;
-    height: 1290px;
+    /* height: 1290px; */
+    height: 200%;
     margin-top: -1202px;
     background-color: #0078ff;
     opacity: 0.6;
@@ -325,7 +330,8 @@ h2{
 .final{
     background-color: rgb(4, 3, 58);
     height: 40px;
-    margin-top: -20px;
+    margin-top: -15px;
+
 }
 
 .btnLink{
@@ -336,6 +342,9 @@ h2{
     color: darkmagenta;
     padding-left: 10%;
 }
+
+
+/* RESPONSIVE */
 
 @media only screen and (max-width: 1030px){
     .layer1{
@@ -348,6 +357,80 @@ h2{
         width: 100%;
     }
     .contact{
-        height: 700px;
+        height: 500px;
+        margin-top: -230px;
     }
+    .backgroundfoot{
+        margin-top: 60%;
+    }
+
 }
+
+@media (max-width: 1040px){
+    div.header .menuHeader{
+        display: none;
+    }
+
+    .show-menu{
+        display: block;
+    }
+ 
+    div.menuHide ul#menu{
+        padding: 1em;
+        background: rgb(149, 215, 231);
+    }
+    div.menuHide ul li{
+        list-style-type: none;
+        /* line-height: 1.5em; */
+        background: rgb(149, 215, 231);
+        border-bottom: 1px solid silver;
+    }
+
+    div.menuHide ul li:hover{
+        width: 90%;
+        color: yellow;
+        text-shadow: 2px -2px 2px black;
+        text-decoration: underline;
+    }
+
+    div.menuHide .logo-menu .hinh{
+        display: flex;
+    }
+
+    div.header{
+        display: none;
+    }
+
+    div.menuHide{
+        position: fixed;
+    }
+
+}
+
+ul{
+    display: none;
+}
+
+.menuHide{
+    background-color:rgb(149, 215, 231);
+    background-image: linear-gradient(rgb(149, 215, 231), cyan);
+    width: 100%;
+    height: 96px;
+    position: fixed;
+    margin-top: -300px;
+    position: fixed;
+    z-index: 199;
+}
+
+#menu{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(48, 1, 109);
+
+}
+
+.hinh{
+    display: none;
+}
+

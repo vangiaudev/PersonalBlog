@@ -35,6 +35,27 @@
             <img id="gifHeader" src="./img/question.gif" alt="Image Error" width="80px" height="80px">
         </div>
     </div>
+
+    <div class="menuHide">
+        <div class="logo-menu">
+            <div class="hinh">
+            <img src="./img/menuHide.png" width="80px" height="80px" style="position: fixed; margin-left:800px; margin-top: 0px; z-index: 200;" alt="" id="navigation">
+            </div>
+            <ul id="menu">
+                <li id="close" style="text-align: left;">
+                    <img src="./img/exit.png" alt="" width="30px" height="30px">
+                </li>
+                <li>HOME</li>
+                <li>ABOUT ME</li>
+                <li>PORTFOLIO</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div id="imgHeader">
+            <img id="photo" src="./img/logohead.png" width="180px" height="140px" >
+        </div>       
+    </div>
+
     
     <div class="body1">
         <div class="hieu_ung_chu" style="text-shadow: 2px -2px 5px rgb(66, 211, 255);">
@@ -281,9 +302,9 @@
                     </ul>
                 </div>
             </div>
-        </div>   
-        <div class="footer">           
-        </div>
+        </div>       
+    </div>
+    <div class="footer">           
     </div>
     <footer class="final">
         <p class="copyright">
@@ -293,5 +314,16 @@
         </p>
     </footer>
     <script src="./js/hieu_ung_chu.js"></script>
+    <script>
+        var menu = document.getElementById('menu');
+
+        document.getElementById('navigation').addEventListener('click', function(){
+            menu.classList.add('show-menu');
+        });
+
+        document.getElementById('close').addEventListener('click', function(){
+            menu.classList.remove('show-menu');
+        });
+    </script>
 </body>
 </html>
