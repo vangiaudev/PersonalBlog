@@ -423,3 +423,10 @@ ul{
     display: none;
 }
 
+.circle{
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 14px solid rgb(248, 248, 248) ;
+    border-radius: 100px;
+}
