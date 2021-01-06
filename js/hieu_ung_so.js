@@ -12,7 +12,7 @@ function animateNumber(finalNumber, delay, startNumber = 0, callback) {
   }
   
   document.addEventListener('DOMContentLoaded', function () {
-    animateNumber(20, 290, 0, function (number) {
+    animateNumber(20, 280, 0, function (number) {
       const formattedNumber = number.toLocaleString()
       document.getElementById('worked-count').innerText = formattedNumber
     })
@@ -27,7 +27,7 @@ function animateNumber(finalNumber, delay, startNumber = 0, callback) {
       document.getElementById('customer-count').innerText = formattedNumber
     })
 
-    animateNumber(6, 1100, 0, function (number) {
+    animateNumber(6, 1050, 0, function (number) {
         const formattedNumber = number.toLocaleString()
         document.getElementById('total-count').innerText = formattedNumber
     })
