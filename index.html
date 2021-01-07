@@ -6,20 +6,23 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./img/favicon.png" />
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<div>
-    <style>
-        body {
-          background-image: url('./img/myphoto.jpg');
-          background-attachment: fixed;
-          background-size: 100%;
-          background-position-y: 80px;
-          background-repeat: no-repeat;
-        }
-    </style>
-</div>
+
 
 <body>
+    <div class="cover">
+        <style>
+            body {
+              background-image: url('./img/myphoto.jpg');
+              background-attachment:fixed;
+              background-size: cover;
+              background-position-y: 80px;
+              background-position-x: center;
+              background-repeat: no-repeat;
+            }
+        </style>
+    </div>
     <div class="header">
         <div id="imgHeader">
             <img id="photo" src="./img/logohead.png" width="180px" height="140px" >
@@ -38,7 +41,7 @@
     <div class="menuHide" >
         <div class="logo-menu">
             <div class="hinh">
-            <img src="./img/menuHide.png" width="80px" height="80px" style="position: fixed; margin-left:800px; margin-top: 0px; z-index: 200;" alt="" id="navigation">
+            <img src="./img/menuHide.png" width="80px" height="80px" style="position: fixed; margin-left:80%; margin-top: 0px; z-index: 200;" alt="" id="navigation">
             </div>
             <ul id="menu">
                 <li id="close" style="text-align: left;">
@@ -52,13 +55,12 @@
         </div>       
     </div>
     
-
     
     <div class="body1">
         <div class="hieu_ung_chu" style="text-shadow: 2px -2px 5px rgb(66, 211, 255);">
             <center>
             <h1 style="font-family: Arial, Helvetica; font-weight: 600;" >
-                <b>I am Giau Nguyen</b>
+                <b class="name">I am Giau Nguyen</b>
             </h1>
             <span class="danh_chu" data-thoiGianDoi="1500" data-chu='["Fullstack", "Developer", "RECCA"]'></span>
             </center>
@@ -166,10 +168,10 @@
                 <span class="aboutme">ABOUT ME</span>
                 <div class="gachchan"></div>
                 <p class="mota">
-                    Blends academic knowledge both web development and algorithm usage and application. 
-                    Applying the experiences as well as the language skills of PHP, HTML, CSS .... 
-                    learned in the school to become a Web Developer brings practical values. 
-                    Contribute to the growing company, always keeping updated with the most recent technologies and 
+                    Blends academic knowledge both web development and algorithm usage and application.
+                    Applying the experiences as well as the language skills of PHP, HTML, CSS ....
+                    learned in the school to become a Web Developer brings practical values.
+                    Contribute to the growing company, always keeping updated with the most recent technologies and
                     always seeking to improve and grow as a professional and as a person.
                 </p>
                 <span class="aboutme">SKILL</span>
@@ -264,8 +266,7 @@
             <img src="./img/backgroundfooter.jpg" alt="" width="100%" height="100%">
             <img src="./img/forest.jpg" alt="" width="100%" height="100%">
             <div class="footer">
-                <center>
-                    
+                <center>         
                 <div class="number">       
                     <div >
                         <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
@@ -278,7 +279,7 @@
                         <div style="font-size: 20px; color: rgb(255, 255, 255);">WORK COMPLETED</div>
                         </div>
               
-                        <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
+                        <div class="exp" style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
                             <div class="circle">
                                 <img src="./img/years.png" alt="" width="40px" height="40px" style="margin-top: 10px;">
                             </div>
@@ -312,25 +313,24 @@
                     </div>
                   </div>
                 </center>
-
             </div>
             <div class="contact">
                 <span class="getInTouch">
                     ❖ Get in Touch
                 </span>
                 <div class="gachchan" style="margin-top:10px; margin-left: 142px; margin-bottom: 20px;"></div>
-                <span class="findMe" style="font-size: 25px; margin-left: 110px;">
+                <span class="findMe">
                     ☟ Find me and contact me here ☟
                 </span>
-                <p style="font-size: 18px;">
+                <p class="text-about" style="font-size: 18px;">
                     <img src="./img/location.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
                     District 1, Ho Chi Minh City
                 </p>
-                <p style="font-size: 14px;">
+                <p class="text-about" style="font-size: 14px;">
                     <img src="./img/call.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
                     ⓿ ❸ ❹ ❸ ❹ ❼ ❾ ❹ ❾ ❻
                 </p>
-                <p style="font-size: 18px;">
+                <p class="text-about" style="font-size: 18px;">
                     <img src="./img/gmail.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
                     vangiau.recca@gmail.com
                 </p>
@@ -340,7 +340,7 @@
                             <div class="facebook">
                                 <center>
                                     <a href="https://www.facebook.com/vangiau.recca" target="tab">
-                                        <img src="./img/facebook.png" alt="" width="30px" height="30px" style="margin-top: 7px;">
+                                        <img class="icons" src="./img/facebook.png" alt="" width="30px" height="30px">
                                     </a> 
                                 </center>
                             </div>
@@ -349,7 +349,7 @@
                             <div class="link">
                                 <center>
                                     <a href="https://www.instagram.com/vangiau.recca/" target="tab">
-                                        <img src="./img/instagram.png" alt="" width="30px" height="30px" style="margin-top: 7px;">
+                                        <img class="icons" src="./img/instagram.png" alt="" width="30px" height="30px">
                                     </a>
                                 </center>
                             </div>
@@ -358,7 +358,7 @@
                             <div class="link">
                                 <center>
                                     <a href="https://twitter.com/vangiau_recca" target="tab">
-                                        <img src="./img/twitter.png" alt="" width="30px" height="30px" style="margin-top: 7px;">
+                                        <img class="icons" src="./img/twitter.png" alt="" width="30px" height="30px">
                                     </a>
                                 </center>
                             </div>
@@ -367,7 +367,7 @@
                             <div class="link">
                                 <center>
                                     <a href="https://www.youtube.com/channel/UCaxR1aMhRUId7JzXN3unNXQ?view_as=subscriber" target="tab">
-                                        <img src="./img/youtube.png" alt="" width="30px" height="30px" style="margin-top: 7px;">
+                                        <img class="icons" src="./img/youtube.png" alt="" width="30px" height="30px">
                                     </a>
                                 </center>
                             </div>
@@ -376,7 +376,7 @@
                             <div class="link">
                                 <center>
                                     <a href="https://www.pinterest.com/vangiau_recca/" target="tab">
-                                        <img src="./img/pinterest.png" alt="" width="30px" height="30px" style="margin-top: 7px;">
+                                        <img class="icons" src="./img/pinterest.png" alt="" width="30px" height="30px">
                                     </a>
                                 </center>
                             </div>
@@ -385,7 +385,7 @@
                             <div class="link">
                                 <center>
                                     <a href="https://github.com/vangiaurecca" target="tab">
-                                        <img src="./img/github.png" alt="" width="30px" height="30px" style="margin-top: 7px;">
+                                        <img class="icons" src="./img/github.png" alt="" width="30px" height="30px">
                                     </a>
                                 </center>
                             </div>
@@ -394,7 +394,7 @@
                             <div class="link">
                                 <center>
                                     <a href="https://zalo.me/0385642964" target="tab">
-                                        <img src="./img/zalo.png" alt="" width="30px" height="30px" style="margin-top: 7px;">
+                                        <img class="icons" src="./img/zalo.png" alt="" width="30px" height="30px">
                                     </a>
                                 </center>
                             </div>

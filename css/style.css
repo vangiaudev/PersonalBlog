@@ -1,3 +1,8 @@
+@font-face{
+    font-family: MyFont;
+    src: url('../font/AlfaSlabOne-Regular.ttf');
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -136,7 +141,6 @@ h2{
     position: relative;
 }
 
-
 .avatar{
     padding-top: 30px;
 }
@@ -152,7 +156,6 @@ h2{
     height: 20px;
     background-color: rgb(53, 99, 252);
     margin: -15px auto 20px 0px;
-
 }
 
 .education{
@@ -195,7 +198,6 @@ h2{
     height: auto;
     margin: auto auto auto 20px;
     background-color: red;
-    
 }
 
 .shortcomings2{
@@ -210,7 +212,6 @@ h2{
     height: auto;
     margin: auto auto auto 20px;
     background-color: red;
-    
 }
 
 .shortcomings9{
@@ -225,7 +226,6 @@ h2{
     height: auto;
     margin: auto auto auto 20px;
     background-color: red;
-    
 }
 
 .shortcomings10{
@@ -252,6 +252,10 @@ h2{
     z-index: 1000;
 }
 
+.findMe{
+    font-size: 25px; 
+    margin-left: 110px;
+}
 
 .contact{
     width: 80%;
@@ -259,14 +263,14 @@ h2{
     margin: -460px auto 50px auto;
     background-color:rgb(226, 226, 226);
     position: relative;
-    box-shadow: 0px 3px 3px rgb(51, 3, 3);
+    box-shadow: 0px 2px 2px rgb(51, 3, 3);
     z-index: 11;
 }
 
 .getInTouch{
     position: relative;
-    font-size: 40px;
-    font-family: fantasy;
+    font-size: 38px;
+    font-family: MyFont;
     margin-left: 10%;
     bottom: -10px;
 }
@@ -307,13 +311,14 @@ h2{
     margin-left: 30px;
 }
 
-
+.icons{
+    margin-top: 7px;
+}
 
 .final{
     background-color: rgb(4, 3, 58);
     height: 80px;
     position: relative;
-
 }
 
 .btnLink{
@@ -324,7 +329,6 @@ h2{
     color: darkmagenta;
     padding-left: 10%;
 }
-
 
 /* RESPONSIVE */
 
@@ -338,31 +342,25 @@ h2{
     .layer2b{
         width: 100%;
     }
-
-    .backgroundfoot{
-        margin-top: 60%;
-    }
-
     .footer{
         display:none
     }
-
     .contact{
         margin: auto auto -10px auto;
         width: 100%;
     }
-
 }
 
-@media (max-width: 1040px){
+@media screen and (max-width: 1040px){
+    .desktop{display: none;}
+    .mobile{display: block;}
+
     div.header .menuHeader{
         display: none;
     }
-
     .show-menu{
         display: block;
     }
- 
     div.menuHide ul#menu{
         padding: -3em;
         background: rgb(149, 215, 231);
@@ -372,7 +370,6 @@ h2{
         background: rgb(149, 215, 231);
         border-bottom: 1px solid silver;
     }
-
     div.menuHide ul li:hover{
         width: 90%;
         color: yellow;
@@ -380,20 +377,51 @@ h2{
         text-decoration: underline;
         cursor: grabbing;
     }
-
     div.menuHide .logo-menu .hinh{
         display: flex;
     }
-
     div.header{
         display: none;
     }
-
     div.menuHide{
         position: fixed;
     }
-
-
+    .name{
+        font-size: 37px;
+    }
+    .danh_chu{
+        font-size: 30px;
+    }
+    .backgroundfoot{
+        margin-top: 1100px;
+    }
+    .layer2a{
+        height: 900px;
+    }
+    .layer2b{
+        height: 1100px;
+    }
+    .getInTouch{
+        font-size: 25px;
+    }
+    .findMe{
+        font-size: 20px;
+        margin-left: 15%;
+    }
+    .facebook, .link{
+        width: 30px;
+        height: 30px;
+    }
+    .icons{
+        width: 15px;
+        height: 15px;
+    }
+    .text-about{
+        margin-left: -10%;
+    }
+    .link{
+        margin-left: 10px;
+    }
 }
 
 ul{
