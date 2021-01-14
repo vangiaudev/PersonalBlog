@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
 <body>
+    <!-- HEADER/NAV -->
     <div class="cover">
         <style>
             body {
@@ -24,24 +24,28 @@
         </style>
     </div>
     <div class="header">
-        <div id="imgHeader">
-            <img id="photo" src="./img/logohead.png" width="180px" height="140px" >
+        <div class="img-header">
+            <img id="photo" src="./img/logo_transparent.png" width="200px" height="150px" >
         </div>
-        <ul class="menuHeader">
+        <ul class="menu-header">
             <li>HOME</li>
             <li>ABOUT ME</li>
             <li>PORTFOLIO</li>
             <li>CONTACT</li>
         </ul>
         <div>
-            <img id="gifHeader" src="./img/question.gif" alt="Image Error" width="80px" height="80px">
+            <img id="gif-header" src="./img/question.gif" alt="Image Error" width="80px" height="80px">
         </div>
     </div>
 
-    <div class="menuHide" >
+    <!-- HEADER RESPONSIVE -->
+    <div class="menu-hide">
+        <div class="logo-mobile">
+            <img src="./img/blog-icon.png" alt="" width="140px" height="60px">
+        </div>
         <div class="logo-menu">
-            <div class="hinh">
-            <img src="./img/menuHide.png" width="80px" height="80px" style="position: fixed; margin-left:80%; margin-top: 0px; z-index: 200;" alt="" id="navigation">
+            <div class="image">
+            <img src="./img/menuHide.png" width="60px" height="60px" style="position: fixed; margin-left:80%; margin-top: 0px; z-index: 200;" alt="" id="navigation">
             </div>
             <ul id="menu">
                 <li id="close" style="text-align: left;">
@@ -52,11 +56,11 @@
                 <li>PORTFOLIO</li>
                 <li>CONTACT</li>
             </ul>
-        </div>       
+        </div>     
     </div>
     
-    
-    <div class="body1">
+    <!-- TYPING EFFECT -->
+    <div>
         <div class="hieu_ung_chu" style="text-shadow: 2px -2px 5px rgb(66, 211, 255);">
             <center>
             <h1 style="font-family: Arial, Helvetica; font-weight: 600;" >
@@ -67,8 +71,9 @@
         </div>
     </div>
 
-    <div class="layer1">
-        <div class="layer2a">
+    <!-- LAYOUT MAIN -->
+    <div class="layout-information">
+        <div class="layout-profile">
             <div class="avatar">
                 <span>
                     <center>
@@ -76,7 +81,7 @@
                     </center>
                 </span>
             </div>
-            <div class="name">
+            <div class="intro-name">
                 <span>
                     <center>    
                         <h3>
@@ -86,8 +91,8 @@
                     </center>
                 </span>
             </div>
-            <div class="information">
-                <div class="infor">
+            <div class="item-information">
+                <div class="hightlight-profile">
                     <center>
                         <p style="color: lavender;"> <b>PROFILE</b></p>
                     </center>
@@ -134,7 +139,7 @@
                     <b>Level: </b>
                     Fresher Developer
                 </span>
-                <div class="education">
+                <div class="hightlight-education">
                     <center>
                         <p style="color: lavender;"> <b>EDUCATION</b></p>
                     </center>
@@ -146,7 +151,7 @@
                     <img src="./img/education.png" alt="" width="20px" height="20px">
                     Bachelor of Information Technology
                 </span>
-                <div class="education">
+                <div class="hightlight-education">
                     <center>
                         <p style="color: lavender;"> <b>CERTIFICATE</b></p>
                     </center>
@@ -163,87 +168,85 @@
             </br>
             </div>
         </div>
-
-        <div class="layer2b">
-                <span class="aboutme">ABOUT ME</span>
-                <div class="gachchan"></div>
-                <p class="mota">
+        <div class="layout-about-me">
+                <span class="item-about-me">ABOUT ME</span>
+                <div class="underline"></div>
+                <p class="introduce-yourself">
                     Blends academic knowledge both web development and algorithm usage and application.
                     Applying the experiences as well as the language skills of PHP, HTML, CSS ....
                     learned in the school to become a Web Developer brings practical values.
                     Contribute to the growing company, always keeping updated with the most recent technologies and
                     always seeking to improve and grow as a professional and as a person.
                 </p>
-                <span class="aboutme">SKILL</span>
-                <div class="gachchan"></div>
+                <span class="item-about-me">SKILL</span>
+                <div class="underline"></div>
                 <span class="cpp">
-                    <div style="display: flex; width: 46%; justify-content: space-between;">
+                    <div class="item-programming-language">
                         <div style="margin-left: 20px;"> 
                             <h4>C++</h4>                        
                         </div>
-                        <div style="margin-right: -200px;">
+                        <div class="percent">
                             <h4>70%</h4> 
                         </div>
                     </div>      
-                    <div class="drawskill">
-                            <div class="drawskill">
+                    <div class="draw-skill">
+                            <div class="line-level">.
                             </div>
-                            <div class="shortcomings">
+                            <div class="line-miss" style="--percent: 49%">.
                             </div>
                     </div>          
                 </span>
                 <span class="cs">
-                    <div style="display: flex; width: 46%; justify-content: space-between;">
+                    <div class="item-programming-language">
                         <div style="margin-left: 20px;"> 
                             <h4>C#</h4>                        
                         </div>
-                        <div style="margin-right: -200px;">
+                        <div class="percent">
                             <h4>40%</h4> 
                         </div>
                     </div>      
-                    <div class="drawskill">
-                            <div class="linelevel2">
+                    <div class="draw-skill">
+                            <div class="line-level">.
                             </div>
-                            <div class="shortcomings2">
+                            <div class="line-miss" style="--percent: 28%">.
                             </div>
                     </div>      
                 </span>
                 <span class="css">
-                    <div style="display: flex; width: 46%; justify-content: space-between;">
+                    <div class="item-programming-language">
                         <div style="margin-left: 20px;"> 
                             <h4>HTML</h4>                        
                         </div>
-                        <div style="margin-right: -200px;">
+                        <div class="percent">
                             <h4>30%</h4> 
                         </div>
                     </div>      
-                    <div class="drawskill">
-                            <div class="linelevel9">
+                    <div class="draw-skill">
+                            <div class="line-level">.
                             </div>
-                            <div class="shortcomings9">
+                            <div class="line-miss" style="--percent: 21%">.
                             </div>
                     </div>      
                 </span>
                 <span class="html">
-                    <div style="display: flex; width: 46%; justify-content: space-between;">
+                    <div class="item-programming-language">
                         <div style="margin-left: 20px;"> 
                             <h4>CSS</h4>                        
                         </div>
-                        <div style="margin-right: -200px;">
+                        <div class="percent">
                             <h4>30%</h4> 
                         </div>
                     </div>  
-                    <div class="drawskill">
-                            <div class="linelevel10">                         
+                    <div class="draw-skill">
+                            <div class="line-level">.                        
                             </div>
-                            <div class="shortcomings10">
+                            <div class="line-miss" style="--percent: 21%">.
                             </div>
                     </div>      
                 </span>
-                <br>
-                </br>
-                <span class="aboutme">REVIEWS</span>
-                <div class="gachchan"></div>
+                <br></br>
+                <span class="item-about-me">REVIEWS</span>
+                <div class="underline"></div>
                 <div class="stars">
                     <form action="">
                       <input class="star star-5" id="star-5" type="radio" name="star"/>
@@ -261,150 +264,143 @@
         </div>
     </div>
 
-    <div class="backgroundContact">  
-        <div class="backgroundfoot">
-            <img src="./img/backgroundfooter.jpg" alt="" width="100%" height="100%">
-            <img src="./img/forest.jpg" alt="" width="100%" height="100%">
-            <div class="footer">
-                <center>         
-                <div class="number">       
-                    <div >
-                        <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
-                            <div class="circle">
-                                <img src="./img/tick.png" alt="" width="40px" height="40px" style="margin-top: 12px;">
-                            </div>
-                            <div id="worked-count" style="font-size: 30px; color: rgb(241, 241, 241);">
-                                20
-                            </div>
-                        <div style="font-size: 20px; color: rgb(255, 255, 255);">WORK COMPLETED</div>
-                        </div>
-              
-                        <div class="exp" style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
-                            <div class="circle">
-                                <img src="./img/years.png" alt="" width="40px" height="40px" style="margin-top: 10px;">
-                            </div>
-                            <div id="city-count" style="font-size: 30px; color: rgb(241, 241, 241);">
-                                0
-                            </div>
-                            <div style="font-size: 20px; color: rgb(255, 255, 255);">YEARS OF EXPERIENCE</div>
-                        </div>
-              
-
-                        <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 110px;">
-                            <div class="circle">
-                                <img src="./img/customer.png" alt="" width="40px" height="40px" style="margin-top: 15px;">
-                            </div>
-                            <div id="customer-count" style="font-size: 30px; color: rgb(241, 241, 241);">
-                                50
-                            </div>
-                            <div style="font-size: 20px; color: rgb(255, 255, 255);">TOTAL CLIENTS</div>
-                        </div>
-
-                        <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 150px;">
-                            <div class="circle">
-                                <img src="./img/award.png" alt="" width="40px" height="40px" style="margin-top: 10px;">
-                            </div>
-                            <div id="total-count" style="font-size: 30px; color: rgb(241, 241, 241);">
-                                6
-                            </div>
-                            <div style="font-size: 20px; color: rgb(255, 255, 255);">AWARD WON</div>
-                        </div>
-
+    <!-- LAYOUT CONTACT -->
+    <div class="background-footer">
+        <img src="./img/backgroundfooter.jpg" alt="" width="100%" height="100%">
+        <img src="./img/forest.jpg" alt="" width="100%" height="100%">
+        <div class="footer">
+            <center>         
+            <div class="number">       
+                <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
+                    <div class="circle">
+                        <img src="./img/tick.png" alt="" width="40px" height="40px" style="margin-top: 12px;">
                     </div>
-                  </div>
-                </center>
-            </div>
-            <div class="contact">
-                <span class="getInTouch">
-                    ❖ Get in Touch
-                </span>
-                <div class="gachchan" style="margin-top:10px; margin-left: 142px; margin-bottom: 20px;"></div>
-                <span class="findMe">
-                    ☟ Find me and contact me here ☟
-                </span>
-                <p class="text-about" style="font-size: 18px;">
-                    <img src="./img/location.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
-                    District 1, Ho Chi Minh City
-                </p>
-                <p class="text-about" style="font-size: 14px;">
-                    <img src="./img/call.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
-                    ⓿ ❸ ❹ ❸ ❹ ❼ ❾ ❹ ❾ ❻
-                </p>
-                <p class="text-about" style="font-size: 18px;">
-                    <img src="./img/gmail.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
-                    vangiau.recca@gmail.com
-                </p>
-                <div class="socials">
-                    <ul class="btnLink">
-                        <li>
-                            <div class="facebook">
-                                <center>
-                                    <a href="https://www.facebook.com/vangiau.recca" target="tab">
-                                        <img class="icons" src="./img/facebook.png" alt="" width="30px" height="30px">
-                                    </a> 
-                                </center>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="link">
-                                <center>
-                                    <a href="https://www.instagram.com/vangiau.recca/" target="tab">
-                                        <img class="icons" src="./img/instagram.png" alt="" width="30px" height="30px">
-                                    </a>
-                                </center>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="link">
-                                <center>
-                                    <a href="https://twitter.com/vangiau_recca" target="tab">
-                                        <img class="icons" src="./img/twitter.png" alt="" width="30px" height="30px">
-                                    </a>
-                                </center>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="link">
-                                <center>
-                                    <a href="https://www.youtube.com/channel/UCaxR1aMhRUId7JzXN3unNXQ?view_as=subscriber" target="tab">
-                                        <img class="icons" src="./img/youtube.png" alt="" width="30px" height="30px">
-                                    </a>
-                                </center>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="link">
-                                <center>
-                                    <a href="https://www.pinterest.com/vangiau_recca/" target="tab">
-                                        <img class="icons" src="./img/pinterest.png" alt="" width="30px" height="30px">
-                                    </a>
-                                </center>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="link">
-                                <center>
-                                    <a href="https://github.com/vangiaurecca" target="tab">
-                                        <img class="icons" src="./img/github.png" alt="" width="30px" height="30px">
-                                    </a>
-                                </center>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="link">
-                                <center>
-                                    <a href="https://zalo.me/0385642964" target="tab">
-                                        <img class="icons" src="./img/zalo.png" alt="" width="30px" height="30px">
-                                    </a>
-                                </center>
-                            </div>
-                        </li>
-                    </ul>
+                    <div id="worked-count" style="font-size: 30px; color: rgb(241, 241, 241);">
+                        20
+                    </div>
+                    <div style="font-size: 20px; color: rgb(255, 255, 255);">WORK COMPLETED</div>
                 </div>
+                <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
+                    <div class="circle">
+                        <img src="./img/years.png" alt="" width="40px" height="40px" style="margin-top: 10px;">
+                    </div>
+                    <div id="city-count" style="font-size: 30px; color: rgb(241, 241, 241);">
+                        0
+                    </div>
+                    <div style="font-size: 20px; color: rgb(255, 255, 255);">YEARS OF EXPERIENCE</div>
+                </div>             
+                <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 110px;">
+                    <div class="circle">
+                        <img src="./img/customer.png" alt="" width="40px" height="40px" style="margin-top: 15px;">
+                    </div>
+                    <div id="customer-count" style="font-size: 30px; color: rgb(241, 241, 241);">
+                        50
+                    </div>
+                    <div style="font-size: 20px; color: rgb(255, 255, 255);">TOTAL CLIENTS</div>
+                </div>
+                <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 150px;">
+                    <div class="circle">
+                        <img src="./img/award.png" alt="" width="40px" height="40px" style="margin-top: 10px;">
+                    </div>
+                    <div id="total-count" style="font-size: 30px; color: rgb(241, 241, 241);">
+                        6
+                    </div>
+                    <div style="font-size: 20px; color: rgb(255, 255, 255);">AWARD WON</div>
+                </div>          
             </div>
-        </div> 
+            </center>
+        </div>
+        <div class="contact">
+            <span class="get-in-touch">
+                ❖ Get in Touch
+            </span>
+            <div class="underline" style="margin-top:10px; margin-left: 142px; margin-bottom: 20px;"></div>
+            <span class="find-me">
+                ☟ Find me and contact me here ☟
+            </span>
+            <p class="text-about" style="font-size: 18px;">
+                <img src="./img/location.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
+                District 1, Ho Chi Minh City
+            </p>
+            <p class="text-about" style="font-size: 14px;">
+                <img src="./img/call.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
+                ⓿ ❸ ❹ ❸ ❹ ❼ ❾ ❹ ❾ ❻
+            </p>
+            <p class="text-about" style="font-size: 18px;">
+                <img src="./img/gmail.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
+                vangiau.recca@gmail.com
+            </p>
+            <div class="socials">
+                <ul class="btn-link">
+                    <li>
+                        <div class="facebook">
+                            <center>
+                                <a href="https://www.facebook.com/vangiau.recca" target="tab">
+                                    <img class="icons" src="./img/facebook.png">
+                                </a> 
+                            </center>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link">
+                            <center>
+                                <a href="https://www.instagram.com/vangiau.recca/" target="tab">
+                                    <img class="icons" src="./img/instagram.png">
+                                </a>
+                            </center>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link">
+                            <center>
+                                <a href="https://twitter.com/vangiau_recca" target="tab">
+                                    <img class="icons" src="./img/twitter.png">
+                                </a>
+                            </center>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link">
+                            <center>
+                                <a href="https://www.youtube.com/channel/UCaxR1aMhRUId7JzXN3unNXQ?view_as=subscriber" target="tab">
+                                    <img class="icons" src="./img/youtube.png">
+                                </a>
+                            </center>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link">
+                            <center>
+                                <a href="https://www.pinterest.com/vangiau_recca/" target="tab">
+                                    <img class="icons" src="./img/pinterest.png">
+                                </a>
+                            </center>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link">
+                            <center>
+                                <a href="https://github.com/vangiaurecca" target="tab">
+                                    <img class="icons" src="./img/github.png" alt="" width="30px" height="30px">
+                                </a>
+                            </center>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link">
+                            <center>
+                                <a href="https://zalo.me/0385642964" target="tab">
+                                    <img class="icons" src="./img/zalo.png" alt="" width="30px" height="30px">
+                                </a>
+                            </center>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
+    <!-- FOOTER -->
     <footer class="final">
         <p class="copyright">
             <center style="color: white; font-size: 20px;">
@@ -412,6 +408,8 @@
             </center>         
         </p>
     </footer>
+
+    <!-- JAVASCRIPT -->
     <script src="./js/hieu_ung_chu.js"></script>
     <script src="./js/hieu_ung_so.js"></script>
     <script>
@@ -425,5 +423,6 @@
             menu.classList.remove('show-menu');
         });
     </script>
+    <!-- END -->
 </body>
 </html>
