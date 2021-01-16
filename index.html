@@ -17,22 +17,38 @@
               background-image: url('./img/myphoto.jpg');
               background-attachment:fixed;
               background-size: cover;
-              background-position-y: 80px;
               background-position-x: center;
               background-repeat: no-repeat;
             }
         </style>
     </div>
-    <div class="header">
+    <div class="header-show">
+        <div class="img-header">
+            <img id="photo" src="./img/logo_name_blog.png" width="200px" height="150px" >
+        </div>
+        <div class="menu-header list-menu">
+            <ul class="text-menu">
+                <li>HOME</li>
+                <li>ABOUT ME</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div>
+            <img id="gif-header" src="./img/question.gif" alt="Image Error" width="80px" height="80px">
+        </div>
+    </div>
+
+    <div class="header header-scroll">
         <div class="img-header">
             <img id="photo" src="./img/logo_transparent.png" width="200px" height="150px" >
         </div>
-        <ul class="menu-header">
-            <li>HOME</li>
-            <li>ABOUT ME</li>
-            <li>PORTFOLIO</li>
-            <li>CONTACT</li>
-        </ul>
+        <div class="menu-header list-menu">
+            <ul class="text-menu">
+                <li>HOME</li>
+                <li>ABOUT ME</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
         <div>
             <img id="gif-header" src="./img/question.gif" alt="Image Error" width="80px" height="80px">
         </div>
@@ -266,47 +282,52 @@
 
     <!-- LAYOUT CONTACT -->
     <div class="background-footer">
-        <img src="./img/backgroundfooter.jpg" alt="" width="100%" height="100%">
-        <img src="./img/forest.jpg" alt="" width="100%" height="100%">
+        <div class="background-photo">
+            <img id="laptop" src="./img/backgroundfooter.jpg" alt="" width="100%" height="700px">
+            <img id="forest" src="./img/forest.jpg" alt="" width="100%" height="600px">
+        </div>
         <div class="footer">
-            <center>         
-            <div class="number">       
-                <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
+            <center>      
+            <div class="layout-number">
+                <div class="number-achievement">
                     <div class="circle">
-                        <img src="./img/tick.png" alt="" width="40px" height="40px" style="margin-top: 12px;">
+                        <img src="./img/tick.png" width="40px" height="40px" style="margin-top: 12px;">
                     </div>
-                    <div id="worked-count" style="font-size: 30px; color: rgb(241, 241, 241);">
+                    <div id="worked-count" class="count-number">
                         20
                     </div>
-                    <div style="font-size: 20px; color: rgb(255, 255, 255);">WORK COMPLETED</div>
+                    <div>WORK COMPLETED</div>
                 </div>
-                <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 100px;">
+
+                <div class="number-achievement">
                     <div class="circle">
-                        <img src="./img/years.png" alt="" width="40px" height="40px" style="margin-top: 10px;">
+                        <img src="./img/years.png" width="40px" height="40px" style="margin-top: 10px;">
                     </div>
-                    <div id="city-count" style="font-size: 30px; color: rgb(241, 241, 241);">
+                    <div id="city-count" class="count-number">
                         0
                     </div>
-                    <div style="font-size: 20px; color: rgb(255, 255, 255);">YEARS OF EXPERIENCE</div>
-                </div>             
-                <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 110px;">
+                    <div>YEARS OF EXPERIENCE</div>
+                </div>  
+
+                <div class="number-achievement">
                     <div class="circle">
-                        <img src="./img/customer.png" alt="" width="40px" height="40px" style="margin-top: 15px;">
+                        <img src="./img/customer.png" width="40px" height="40px" style="margin-top: 15px;">
                     </div>
-                    <div id="customer-count" style="font-size: 30px; color: rgb(241, 241, 241);">
+                    <div id="customer-count" class="count-number">
                         50
                     </div>
-                    <div style="font-size: 20px; color: rgb(255, 255, 255);">TOTAL CLIENTS</div>
+                    <div>TOTAL CLIENTS</div>
                 </div>
-                <div style="margin-bottom: 45px; float: left; margin-top: 300px; margin-left: 150px;">
+
+                <div class="number-achievement">
                     <div class="circle">
-                        <img src="./img/award.png" alt="" width="40px" height="40px" style="margin-top: 10px;">
+                        <img src="./img/award.png" width="40px" height="40px" style="margin-top: 10px;">
                     </div>
-                    <div id="total-count" style="font-size: 30px; color: rgb(241, 241, 241);">
+                    <div id="total-count" class="count-number">
                         6
                     </div>
-                    <div style="font-size: 20px; color: rgb(255, 255, 255);">AWARD WON</div>
-                </div>          
+                    <div>AWARD WON</div>
+                </div> 
             </div>
             </center>
         </div>
@@ -322,9 +343,9 @@
                 <img src="./img/location.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
                 District 1, Ho Chi Minh City
             </p>
-            <p class="text-about" style="font-size: 14px;">
+            <p class="text-about" style="font-size: 18px;">
                 <img src="./img/call.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
-                ⓿ ❸ ❹ ❸ ❹ ❼ ❾ ❹ ❾ ❻
+                0 3 4 3 4 7 9 4 9 6
             </p>
             <p class="text-about" style="font-size: 18px;">
                 <img src="./img/gmail.png" alt="" width="20px" height="20px" style="margin-left: 110px; margin-right: 10px;">
@@ -407,11 +428,17 @@
                 © Copyright <strong>Van Giau Recca. </strong>All Rights Reserved
             </center>         
         </p>
+        <center>
+            <button class="back-to-top">Back to the top ▲</button>
+        </center>
+        
     </footer>
 
     <!-- JAVASCRIPT -->
     <script src="./js/hieu_ung_chu.js"></script>
     <script src="./js/hieu_ung_so.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/scroll_page.js"></script>
     <script>
         var menu = document.getElementById('menu');
 

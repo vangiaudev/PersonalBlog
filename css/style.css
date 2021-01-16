@@ -7,7 +7,7 @@ body{
     margin: 0px;
     padding: 0px;
     height: 100vh;
-    color:rgb(11, 0, 59);
+    color:rgb(21, 1, 99);
     overflow-y: scroll;
 }
 
@@ -16,8 +16,7 @@ body{
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding: 0 3rem;
-    margin-top: 300px;
+    padding: 9rem 3rem;
 }
 
 h1, h2{
@@ -64,27 +63,91 @@ h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.header{
+.sticky{
     background-color:rgb(149, 215, 231);
     background-image: linear-gradient(rgb(149, 215, 231), cyan);
     width: 100%;
-    height: 96px;
+    height: 80px;
     position: fixed;
-    margin-top: -300px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-sizing: content-box;
     z-index: 200;
+    box-shadow: 2px 5px 5px rgb(0,0,0,0.35);
+    opacity: 0;
+    transition: all .3s linear;
+    animation: fade-in linear .35s forwards;
 }
 
-.menu-header{
+
+.un-sticky{
+    background-color:rgb(149, 215, 231);
+    background-image: linear-gradient(rgb(149, 215, 231), cyan);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: content-box;
+    z-index: 200;
+    box-shadow: 2px 5px 5px rgb(0,0,0,0.35);
+    transition: all .3s linear;
+    animation: fade-out linear .35s forwards;
+}
+
+.header-scroll{
+    opacity: 0;
+}
+
+.header{
+    margin-top:-100px;
+}
+
+@keyframes fade-in{
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fade-out{
+    to{
+        opacity: 0;
+    }
+}
+
+
+
+.list-menu ul{
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
-    margin: -90px 300px 0 290px;
+    justify-content: flex-end;
+    margin: -100px 200px 0 290px;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(48, 1, 109);
+    color: rgb(236, 253, 224);
     position: relative;
+}
 
-} 
+.color-text-menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: -100px 200px 0 290px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(3, 1, 119);
+    position: relative;
+}
+
+
+.menu-header li{
+    margin-left: 30px;
+}
+
+.logo-mobile{
+    position: absolute;
+    margin: 2% 0 0 30%;
+    display: none;
+}
 
 #gif-header{
     margin-left: 1250px;
@@ -114,7 +177,8 @@ h2{
     width: 100%;
     height: 900px;
     background-color: rgb(198, 244, 255);
-    margin-top:300px;
+    margin-bottom: 1280px;
+    margin-top: 170px;
     z-index: 1;
     display: flex;
     justify-content: space-around;
@@ -193,14 +257,21 @@ h2{
     position: absolute;
     background-color: black;
 }
-
 .line-miss{
     width: var(--percent);
     position: absolute;
     color: red;
     background-color: red;
-    animation: growth linear 6s;
 }
+
+.line-miss-scroll{
+    width: var(--percent);
+    position: absolute;
+    color: red;
+    background-color: red;
+    animation: growth linear 4s;
+}
+
 
 @keyframes growth{
     from{
@@ -228,8 +299,9 @@ h2{
 
 .footer{
     width: 100%;
-    height: 1290px;
+    height: 1305px;
     margin-top: -1290px;
+    margin-bottom: -20px;
     background-color: #0078ff;
     opacity: 0.6;
     z-index: 1000;
@@ -243,9 +315,9 @@ h2{
 .contact{
     width: 80%;
     height: 350px;
-    margin: -460px auto 50px auto;
+    margin: -460px 10% 50px 10%;
     background-color:rgb(226, 226, 226);
-    position: relative;
+    position: absolute;
     box-shadow: 0px 2px 2px rgb(51, 3, 3);
     z-index: 11;
 }
@@ -309,7 +381,6 @@ h2{
 
 .final{
     background-color: rgb(4, 3, 58);
-    height: 80px;
     position: relative;
 }
 
@@ -322,10 +393,51 @@ h2{
     padding-left: 10%;
 }
 
+/* .number-achievement{
+    margin-bottom: 45px; 
+    float: left; 
+    margin-top: 300px; 
+    margin-left: 100px;
+} */
+
+.layout-number{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.number-achievement{
+    font-size: 20px; 
+    color: rgb(255, 255, 255);
+    /* background-color: #5af500; */
+    /* width: 148px;
+    height: 90px; */
+    margin-top: 200px
+}
+
+.count-number{
+    font-size: 30px; 
+    color: rgb(241, 241, 241);
+}
+
+.circle{
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 14px solid rgb(248, 248, 248) ;
+    border-radius: 100px;
+}
+
 /* RESPONSIVE */
-@media only screen and (max-width: 1030px){
+@media screen and (max-width: 1040px){
+    .desktop{display: none;}
+    .mobile{display: block;}
+
     .layout-information{
         display: block;
+        margin-bottom: -150px;
     }
     .layout-profile{
         width: 100%;
@@ -334,10 +446,12 @@ h2{
         width: 100%;
     }
     .footer{
-        display:none
+        margin-top: 50px;
+        height: 1206px;
+        margin-bottom: -1300px;
     }
     .contact{
-        margin: auto auto -10px auto;
+        margin: 1200px auto -10px auto;
         width: 100%;
     }
     .introduce-yourself{
@@ -346,13 +460,11 @@ h2{
     .percent{
         margin-right: -110px;
     }
-}
+    .head{
+        display: none;
+    }
 
-@media screen and (max-width: 1040px){
-    .desktop{display: none;}
-    .mobile{display: block;}
-
-    div.header .menu-header{
+    .menu-header ul{
         display: none;
     }
     .show-menu{
@@ -382,6 +494,8 @@ h2{
     }
     div.menu-hide{
         position: fixed;
+        margin-top: -170px;
+        box-shadow: 2px 5px 5px rgb(0,0,0,0.35);
     }
     .name{
         font-size: 35px;
@@ -393,7 +507,7 @@ h2{
         margin-top: 1100px;
     }
     .layout-profile{
-        height: 900px;
+        height: 800px;
     }
     .layout-about-me{
         height: 1100px;
@@ -402,8 +516,8 @@ h2{
         font-size: 25px;
     }
     .find-me{
-        font-size: 20px;
-        margin-left: 15%;
+        font-size: 14px;
+        margin-left: 80px;
     }
     .facebook, .link{
         width: 30px;
@@ -414,15 +528,72 @@ h2{
         height: 15px;
     }
     .text-about{
-        margin-left: -10%;
+        margin-left: -50px;
+        font-size: 14px !important;
+    }
+    .text-about img{
+        width: 14px;
+        height: 14px;
     }
     .link{
         margin-left: 10px;
+    }
+    .logo-mobile{
+        display: inline-block;
+    }
+    .hieu_ung_chu{
+        text-shadow: 1px -1px 3px rgb(66, 211, 255) !important;
+        padding: 0 auto;
+        margin-top: 200px;
+    }
+    .header-scroll{
+        opacity: 1;
+    }
+    body{
+        background-position-y: 80px;
+    }
+    .final{
+        position: absolute;
+        margin-top: 1500px;
+        width: 100%;
+        z-index: 1000;
+    }
+    #laptop{
+        width: 1040px;
+        height: 700px;
+    }
+    #forest{
+        width: 1040px;
+        height: 500px;
+    }
+    .layout-number{
+        display: block;
+    }
+    .number-achievement{
+        padding-top: 20px;
+        margin-top: 40px;
+    }
+    .circle{
+        width: 50px;
+        height: 50px;
+        border: 8px solid rgb(248, 248, 248) ;
+    }
+    .circle img{
+        width: 25px;
+        height: 25px;
     }
 }
 
 ul{
     display: none;
+}
+
+.background-footer{
+    position: relative;
+}
+
+.background-photo{
+    position: absolute;
 }
 
 .menu-hide{
@@ -436,11 +607,6 @@ ul{
     z-index: 199;
 }
 
-.logo-mobile{
-    position: absolute;
-    margin: 2% 0 0 33%;
-}
-
 #menu{
     list-style-type: none;
     font-size: 20px;
@@ -452,12 +618,16 @@ ul{
     display: none;
 }
 
-.circle{
-    width: 70px;
-    height: 70px;
+.back-to-top{
     background-color: transparent;
-    border: 14px solid rgb(248, 248, 248) ;
-    border-radius: 100px;
+    border-color: transparent;
+    color: yellow;
+    /* margin-left: 90%; */
+}
+
+.back-to-top:hover{
+    opacity: 0.5;
+    cursor: grabbing;
 }
 
 div.stars {
