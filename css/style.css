@@ -150,7 +150,7 @@ h2{
 }
 
 #gif-header{
-    margin-left: 90%;
+    margin-left: 92%;
     margin-top: -50px;
 }
 
@@ -181,7 +181,6 @@ h2{
     margin-top: 170px;
     z-index: 1;
     display: flex;
-    margin-left: 200px
     justify-content: space-around;
 }
 
@@ -424,15 +423,15 @@ h2{
         padding-top: 20px;
         padding-bottom: 20px;
         height: auto;
-        
     }
     .layout-profile{
-        box-shadow: 0px -2px 6px rgb(51, 3, 3);
+        box-shadow: 0px -1px 2px rgb(51, 3, 3);
         width: 90%;
         height: 800px;
     }
     .layout-about-me{
-        box-shadow: 0px -2px 6px rgb(51, 3, 3);
+        margin-top: 20px;
+        box-shadow: 0px -1px 2px rgb(51, 3, 3);
         height: auto;
         width: 90%;
     }
@@ -446,7 +445,7 @@ h2{
         width: 100%;
     }
     .introduce-yourself{
-        font-size: 22px;
+        font-size: 20px;
     }
     .percent{
         margin-right: -110px;
