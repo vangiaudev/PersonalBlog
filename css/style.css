@@ -150,7 +150,7 @@ h2{
 }
 
 #gif-header{
-    margin-left: 1250px;
+    margin-left: 1050px;
     margin-top: -50px;
 }
 
@@ -338,7 +338,6 @@ h2{
 }
 
 .socials ul li{
-    list-style-type: none;
     display: flex;
 }
 
@@ -346,22 +345,9 @@ h2{
     cursor: pointer;
 }
 
-.facebook:hover{
-    background-color:#3366FF;
-    border: solid rgb(62, 210, 255);
-}
-
 .link:hover{
     background-color:#3366FF;
     border: solid rgb(62, 210, 255);
-}
-
-.facebook{
-    width: 45px;
-    height: 45px;
-    background-color: rgb(255, 255, 255);
-    border: solid blue;
-    border-radius: 100px;
 }
 
 .link{
@@ -393,13 +379,6 @@ h2{
     padding-left: 10%;
 }
 
-/* .number-achievement{
-    margin-bottom: 45px; 
-    float: left; 
-    margin-top: 300px; 
-    margin-left: 100px;
-} */
-
 .layout-number{
     display: flex;
     justify-content: space-around;
@@ -411,9 +390,6 @@ h2{
 .number-achievement{
     font-size: 20px; 
     color: rgb(255, 255, 255);
-    /* background-color: #5af500; */
-    /* width: 148px;
-    height: 90px; */
     margin-top: 200px
 }
 
@@ -431,13 +407,13 @@ h2{
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 1030px){
     .desktop{display: none;}
     .mobile{display: block;}
 
     .layout-information{
         display: block;
-        margin-bottom: -150px;
+        margin-bottom: -100px;
     }
     .layout-profile{
         width: 100%;
@@ -446,7 +422,7 @@ h2{
         width: 100%;
     }
     .footer{
-        margin-top: 50px;
+        margin-top: 100px;
         height: 1206px;
         margin-bottom: -1300px;
     }
@@ -460,10 +436,6 @@ h2{
     .percent{
         margin-right: -110px;
     }
-    .head{
-        display: none;
-    }
-
     .menu-header ul{
         display: none;
     }
@@ -494,7 +466,7 @@ h2{
     }
     div.menu-hide{
         position: fixed;
-        margin-top: -170px;
+        margin-top: -200px;
         box-shadow: 2px 5px 5px rgb(0,0,0,0.35);
     }
     .name{
@@ -519,9 +491,10 @@ h2{
         font-size: 14px;
         margin-left: 80px;
     }
-    .facebook, .link{
+    .link{
         width: 30px;
         height: 30px;
+        margin-left: 5px;
     }
     .icons{
         width: 15px;
@@ -535,9 +508,6 @@ h2{
         width: 14px;
         height: 14px;
     }
-    .link{
-        margin-left: 10px;
-    }
     .logo-mobile{
         display: inline-block;
     }
@@ -545,9 +515,7 @@ h2{
         text-shadow: 1px -1px 3px rgb(66, 211, 255) !important;
         padding: 0 auto;
         margin-top: 200px;
-    }
-    .header-scroll{
-        opacity: 1;
+        padding-top: 100px;
     }
     body{
         background-position-y: 80px;
@@ -558,19 +526,11 @@ h2{
         width: 100%;
         z-index: 1000;
     }
-    #laptop{
-        width: 1040px;
-        height: 700px;
-    }
-    #forest{
-        width: 1040px;
-        height: 500px;
-    }
     .layout-number{
         display: block;
     }
     .number-achievement{
-        padding-top: 20px;
+        padding-top: 100px;
         margin-top: 40px;
     }
     .circle{
@@ -581,6 +541,15 @@ h2{
     .circle img{
         width: 25px;
         height: 25px;
+    }
+    .background-photo{
+        display: none;
+    }
+    #gif-header{
+        display: none;
+    }
+    .header-show{
+        display: none;
     }
 }
 
@@ -622,7 +591,6 @@ ul{
     background-color: transparent;
     border-color: transparent;
     color: yellow;
-    /* margin-left: 90%; */
 }
 
 .back-to-top:hover{
