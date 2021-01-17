@@ -34,7 +34,7 @@ $(document).ready(function() {
         $('html,body').animate({scrollTop:480}, 1400);
     });
     $('.hide-js-contact').click(function(event){
-        $('html,body').animate({scrollTop:3000}, 1400);
+        $('html,body').animate({scrollTop:3300}, 1400);
     });
     
 });
