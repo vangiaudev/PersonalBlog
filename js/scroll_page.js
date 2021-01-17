@@ -24,5 +24,17 @@ $(document).ready(function() {
     $('.back-to-top').click(function(event){
         $('html,body').animate({scrollTop:0}, 1400);
     });
+    $('.js-scroll-about-me').click(function(event){
+        $('html,body').animate({scrollTop:650}, 1400);
+    });
+    $('.js-scroll-contact').click(function(event){
+        $('html,body').animate({scrollTop:2250}, 1400);
+    });
+    $('.hide-js-about-me').click(function(event){
+        $('html,body').animate({scrollTop:480}, 1400);
+    });
+    $('.hide-js-contact').click(function(event){
+        $('html,body').animate({scrollTop:3000}, 1400);
+    });
     
 });

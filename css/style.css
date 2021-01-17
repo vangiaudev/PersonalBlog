@@ -159,6 +159,12 @@ h2{
     color:  chocolate;
     cursor:pointer;
 }
+
+.js-link-home:hover{
+    text-decoration:none;
+    color:  chocolate;
+    cursor:pointer;
+}
 #myphoto{
     margin-top: 80px;
     z-index: 100;
@@ -482,6 +488,16 @@ h2{
         position: fixed;
         margin-top: -200px;
         box-shadow: 2px 5px 5px rgb(0,0,0,0.35);
+    }
+    .hide-js-link{
+        text-decoration: none;
+    }
+    .hide-js-link:hover{
+        width: 90%;
+        color: yellow;
+        text-shadow: 2px -2px 2px black;
+        text-decoration: underline;
+        cursor: grabbing;
     }
     .name{
         font-size: 35px;
