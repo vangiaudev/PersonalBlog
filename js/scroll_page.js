@@ -36,5 +36,10 @@ $(document).ready(function() {
     $('.hide-js-contact').click(function(event){
         $('html,body').animate({scrollTop:3300}, 1400);
     });
-    
+});
+
+//Loading effect
+$(window).on('load', function(event) {
+	$('body').removeClass('pre-loading');
+	$('.load').delay(2800).fadeOut('fast');
 });
