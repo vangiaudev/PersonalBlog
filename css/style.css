@@ -64,8 +64,10 @@ h2{
 }
 
 .sticky{
-    background-color:rgb(149, 215, 231);
-    background-image: linear-gradient(rgb(149, 215, 231), cyan);
+    /* background-color:rgb(149, 215, 231);
+    background-image: linear-gradient(rgb(149, 215, 231), cyan); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,159,191,1) 49%, rgba(0,212,255,1) 100%);
     width: 100%;
     height: 80px;
     position: fixed;
@@ -81,8 +83,10 @@ h2{
 
 
 .un-sticky{
-    background-color:rgb(149, 215, 231);
-    background-image: linear-gradient(rgb(149, 215, 231), cyan);
+    /* background-color:rgb(149, 215, 231);
+    background-image: linear-gradient(rgb(149, 215, 231), cyan); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,159,191,1) 49%, rgba(0,212,255,1) 100%);
     width: 100%;
     height: 80px;
     position: fixed;
@@ -181,7 +185,7 @@ h2{
 
 .layout-information{
     width: 100%;
-    height: 900px;
+    height: 1100px;
     background-color: rgb(198, 244, 255);
     margin-bottom: 1280px;
     margin-top: 170px;
@@ -192,7 +196,7 @@ h2{
 
 .layout-profile{
     width: 30%;
-    height: 800px;
+    height: 1000px;
     margin: auto auto;
     box-shadow: -1px -2px 3px rgb(51, 3, 3); 
     background-color: whitesmoke;
@@ -200,7 +204,7 @@ h2{
 
 .layout-about-me{
     width: 60%;
-    height: 800px;
+    height: 1000px;
     margin: auto auto;
     box-shadow: 1px -2px 3px rgb(51, 3, 3);
     background-color: whitesmoke;
@@ -246,38 +250,43 @@ h2{
 }
 
 .percent{
-    margin-right: -210px;
+    margin-right: -500px;
+}
+
+.skill-item{
+    display: inline-flex;
+    margin-left: 20px;
 }
 
 .draw-skill{
-    background-color: red;
-    display: flex;
-    position: relative;
     margin-left: 20px;
+    margin-top: -10px;
     width: 100%;
     height: auto;
+    
 }
 
 .line-level{
     width: 70%;
+    height: 14px;
     position: absolute;
-    background-color: black;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
 }
 .line-miss{
     width: var(--percent);
+    height: 14px;
     position: absolute;
-    color: red;
-    background-color: red;
+    background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+    border-radius: 100px;
 }
 
 .line-miss-scroll{
     width: var(--percent);
     position: absolute;
-    color: red;
-    background-color: red;
     animation: growth linear 4s;
 }
-
 
 @keyframes growth{
     from{
@@ -454,7 +463,7 @@ h2{
         font-size: 20px;
     }
     .percent{
-        margin-right: -110px;
+        margin-right: -220px;
     }
     .menu-header ul{
         display: none;
