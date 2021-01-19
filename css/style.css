@@ -178,14 +178,22 @@ h2{
     margin-top: -50px;
 }
 
+.header ul li, .js-link-home{
+    transition: .8s;
+}
+
 .header ul li:hover{
+    transition: .3s;
     text-decoration:none;
     color:  chocolate !important;
     cursor:pointer;
-    text-decoration: line-through;
+}
+.header ul li:hover div.menu-underline{
+    animation: menu-growth-fade-in linear .6s forwards;
 }
 
 .js-link-home:hover{
+    transition: .3s;
     text-decoration:none;
     color:  chocolate !important;
     cursor:pointer;
@@ -385,6 +393,7 @@ h2{
 .link:hover{
     background-color:#3366FF;
     border: solid rgb(62, 210, 255);
+    transition: .5s;
 }
 
 .link{
@@ -394,6 +403,7 @@ h2{
     border: solid blue;
     border-radius: 100px;
     margin-left: 30px;
+    transition: .6s;
 }
 
 .icons{
@@ -693,3 +703,50 @@ label.star:before {
     content: '\f006';
     font-family: FontAwesome;
 }
+
+.text-effect-underline:hover div.underline{
+    background-color: orangered;
+    cursor: pointer;
+    animation: growth-fade-in linear 1s forwards;
+}
+
+@keyframes growth-fade-in{
+    from{
+        opacity: 0;
+        width: 0px;
+    }
+    to{
+        opacity: 1;
+        width: 15%;
+    }
+}
+
+.menu-underline{
+    width: 0%;
+    height: 3px;
+    background-color: chocolate;
+    animation: menu-growth-fade-out linear .6s;
+}
+
+@keyframes menu-growth-fade-in{
+    from{
+        opacity: 0;
+        width: 0%;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}
+@keyframes menu-growth-fade-out{
+    from{
+        opacity: 1;
+        width: 100%;
+    }
+    to{
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+
