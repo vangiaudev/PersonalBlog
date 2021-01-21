@@ -20,15 +20,16 @@ body{
 	top: 0;
 	left: 0;
 	z-index: 100000;
-	display: block;
+	display: flex;
 	overflow: hidden;
 }
 .load img{
 	width: 550px;
 	height: 400px;
-	position: absolute;
-	margin-left: 28%;
-	margin-top: 8%;
+	/* position: absolute; */
+	/* margin-left: 28%;
+    margin-top: 8%; */
+    margin: auto;
 }
 
 .hieu_ung_chu{
@@ -502,6 +503,11 @@ h2{
     }
     .show-menu{
         display: block;
+        transform-origin:  90% top;
+        animation: menu-growth ease-in .25s;
+        -webkit-animation: menu-growth ease-in .25s;
+        -o-animation: menu-growth ease-in .25s;
+        -moz-animation: menu-growth ease-in .25s;
     }
     div.menu-hide ul#menu{
         padding: -3em;
@@ -619,8 +625,7 @@ h2{
     .load img{
         width: 350px;
         height: 250px;
-        margin-left: 25px;
-        margin-top: 50%;
+        margin: auto;
     }
 }
 
@@ -637,7 +642,7 @@ ul{
 }
 
 .menu-hide{
-    background-color:rgb(149, 215, 231);
+    background-color:rgb(127, 221, 235);
     background-image: linear-gradient(rgb(149, 215, 231), cyan);
     width: 100%;
     height: 96px;
@@ -645,6 +650,17 @@ ul{
     margin-top: -300px;
     position: fixed;
     z-index: 199;
+}
+
+@keyframes menu-growth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 #menu{
