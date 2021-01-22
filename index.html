@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./img/favicon.png" />
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -15,6 +17,7 @@
     <div class="load">
         <img src="./img/loading.gif">
     </div>
+    
     <!-- HEADER/NAV -->
     <div class="cover">
         <style class="cover-header">
@@ -524,6 +527,7 @@
                         </div>
                     </li>
                 </ul>
+                <!-- Form Contact -->
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSd2jnb6MACRRGC7timiGFVs4ps98cPnnDPa8bjc6-biawUkDQ/formResponse?embedded=true" class="blockform" id="form_dathang" method="POST" onsubmit="return emptycart()" style="display: block;" target="hidden_iframe">
                     <div class="Contact-form">
                         <fieldset>
@@ -538,9 +542,13 @@
                         <input type="submit" value="Send to Giàu" />
                     </div>
                 </form>
-                <div id="notify" class="hidden-message success" style="display: none;">
-                    Message has been sent to Giau. Thank you for visiting my blog!
-                    <img id="close-notify" src="./img/close-message.png" alt="CLOSE" width="20px" height="20px" style="margin-left: 30px; position: absolute;"> 
+                <!-- Toast Message-->
+                <div class="alert hide">
+                    <span class="fas fa-check-circle"></span>
+                    <span class="msg">Success: Message has been sent to Giau</span>
+                    <div class="close-btn">
+                    <span class="fas fa-times"></span>
+                    </div>
                 </div>
                 <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){}" style="display: none;"></iframe>
             </div>
@@ -558,7 +566,7 @@
             <button class="back-to-top">Back to the top ▲</button>
         </center>
     </footer>
-
+  
     <!-- JAVASCRIPT -->
     <script src="./js/hieu_ung_chu.js"></script>
     <script src="./js/hieu_ung_so.js"></script>
@@ -575,17 +583,27 @@
             menu.classList.remove('show-menu');
         });
     </script>
-    <!-- JS Notification sent successfully -->
+
+    <!-- JAVASCRIPT TOAST MESSAGE -->
     <script type="text/javascript">
         var submitted = false;
-        var closed = document.getElementById('notify');
         document.getElementById('close-notify').addEventListener('click', function() {
-            $('.hidden-message').hide();
+            $('.alert').removeClass("show");
+            $('.alert').addClass("hide");
         });
         function emptycart() {
             submitted = true;
-            // $('.blockform').toggle();
-            $('.hidden-message').show();
+            $('.alert').addClass("show");
+            $('.alert').removeClass("hide");
+            $('.alert').addClass("showAlert");
+            setTimeout(function(){
+                $('.alert').removeClass("show");
+                $('.alert').addClass("hide");
+            },5000);
+            $('.close-btn').click(function(){
+                $('.alert').removeClass("show");
+                $('.alert').addClass("hide");
+            });
         }
         $("iframe #hidden_iframe").on('load', function() {
             simpleCart.empty();
