@@ -538,7 +538,10 @@
                         <input type="submit" value="Send to Giàu" />
                     </div>
                 </form>
-                <div class="hidden-message alert-box success" style="display: none;">Message has been sent to Giau. Thank you for visiting my blog! </div>
+                <div id="notify" class="hidden-message success" style="display: none;">
+                    Message has been sent to Giau. Thank you for visiting my blog!
+                    <img id="close-notify" src="./img/close-message.png" alt="CLOSE" width="20px" height="20px" style="margin-left: 30px; position: absolute;"> 
+                </div>
                 <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){}" style="display: none;"></iframe>
             </div>
         </div>
@@ -575,7 +578,10 @@
     <!-- JS Notification sent successfully -->
     <script type="text/javascript">
         var submitted = false;
-
+        var closed = document.getElementById('notify');
+        document.getElementById('close-notify').addEventListener('click', function() {
+            $('.hidden-message').hide();
+        });
         function emptycart() {
             submitted = true;
             // $('.blockform').toggle();
