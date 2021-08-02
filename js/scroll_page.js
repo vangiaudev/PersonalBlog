@@ -41,5 +41,5 @@ $(document).ready(function() {
 //Loading effect
 $(window).on('load', function(event) {
 	$('body').removeClass('pre-loading');
-	$('.load').delay(2800).fadeOut('fast');
+	$('.load').delay(1200).fadeOut('fast');
 });
