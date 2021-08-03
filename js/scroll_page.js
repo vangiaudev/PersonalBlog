@@ -6,8 +6,6 @@ $(document).ready(function() {
             $('.text-menu').addClass('color-text-menu');
             $('.menu-header').removeClass('list-menu');
             $('.un-sticky').removeClass('un-sticky');
-            
-            
         }
         else {         
             $('.header').removeClass('sticky');
@@ -41,5 +39,5 @@ $(document).ready(function() {
 //Loading effect
 $(window).on('load', function(event) {
 	$('body').removeClass('pre-loading');
-	$('.load').delay(1200).fadeOut('fast');
+	$('.load').delay(300).fadeOut('fast');
 });
