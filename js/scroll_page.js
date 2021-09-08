@@ -37,7 +37,7 @@ $(document).ready(function() {
 });
 
 //Loading effect
-$(window).on('load', function(event) {
-	$('body').removeClass('pre-loading');
-	$('.load').delay(300).fadeOut('fast');
-});
+// $(window).on('load', function(event) {
+// 	$('body').removeClass('pre-loading');
+// 	$('.load').delay(300).fadeOut('fast');
+// });
