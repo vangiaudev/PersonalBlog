@@ -1,2 +1,2 @@
 # My Portfolio
-- Link: https://vangiaurecca.github.io/PersonalBlog/index.html
+- Link: https://vangiau-portfolio.vercel.app/
