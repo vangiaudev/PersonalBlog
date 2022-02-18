@@ -32,7 +32,6 @@ hieu_ung_danh_chu.prototype.ham_danh_chu = function() {
 
     if(!this.dang_xoa_chu && this.tu === chu_hien_tai) {
         toc_do_danh_chu = this.thoiGianDoi;
-        console.log(this.thoiGianDoi)
         this.dang_xoa_chu = true;
     } else if (this.dang_xoa_chu && this.tu === ''){
         this.dang_xoa_chu = false;
