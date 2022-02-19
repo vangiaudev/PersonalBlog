@@ -49,7 +49,7 @@ window.addEventListener("scroll", ()=>{
         menu[i].classList.toggle("color-text-menu", window.scrollY > 0)
     }
     if(window.scrollY > 0){
-        logo.src = "../img/logo_transparent.png"
+        logo.src = "https://vangiaurecca.github.io/PersonalBlog/img/logo_transparent.png"
     }
     else{
         logo.src = "../img/logo_name_blog.png"
